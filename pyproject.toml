@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vibe-shuffle"
+version = "0.1.0"
+description = "Yet another revolutionary library that will definitely change your life forever."
+readme = "README.md"
+authors = [{name = "Kien Nguyen Minh"}]
+license = {text = "MIT"}
+requires-python = ">=3.8"
+dependencies = [
+    "openai>=1.95.1",
+    "pydantic>=2.11.7",
+    "typing-extensions>=4.14.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/kienfssc/vibe-shuffle"
+Repository = "https://github.com/kienfssc/vibe-shuffle"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"
